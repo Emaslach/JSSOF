@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shop | JSSOF</title>
+    <meta
+      name="description"
+      content="Shop JSSOF gear including sweatshirts, t-shirts, and hats to support the mission."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Source+Sans+3:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <link rel="icon" type="image/png" href="assets/favicon.png" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <a class="logo" href="index.html" aria-label="JSSOF home">
+          <img class="logo-nav-icon" src="assets/jssof-hero-logo.png" alt="" aria-hidden="true" />
+          <span class="logo-mark">JSSOF</span>
+        </a>
+        <button
+          class="hamburger"
+          type="button"
+          aria-label="Open menu"
+          aria-expanded="false"
+          aria-controls="primary-nav"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <nav id="primary-nav" aria-label="Primary">
+          <ul class="nav-links">
+            <li><a href="index.html#mission">Mission</a></li>
+            <li><a href="index.html#respites">Respites</a></li>
+            <li><a href="index.html#impact">Impact</a></li>
+            <li><a href="index.html#leadership">Leadership</a></li>
+            <li><a href="index.html#sponsors">Sponsors</a></li>
+            <li><a href="shop.html" aria-current="page">Shop</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+          </ul>
+        </nav>
+        <a class="btn btn-sm" href="index.html#donate">Donate</a>
+      </div>
+    </header>
+
+    <main>
+      <section class="shop-hero">
+        <div class="hero-overlay"></div>
+        <div class="container hero-content page-hero-content">
+          <p class="eyebrow">JSSOF Store</p>
+          <h1>Wear the mission.</h1>
+          <p class="hero-copy">
+            Support JSSOF with official gear. Every order helps strengthen programs
+            for warfighters, families, and veterans.
+          </p>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="shop-toolbar">
+            <div class="shop-chips">
+              <button class="shop-chip is-active" type="button">All</button>
+              <button class="shop-chip" type="button">Sweatshirts</button>
+              <button class="shop-chip" type="button">T-Shirts</button>
+              <button class="shop-chip" type="button">Hats</button>
+            </div>
+            <select class="shop-sort" aria-label="Sort products">
+              <option>Sort: Featured</option>
+              <option>Price: Low to High</option>
+              <option>Price: High to Low</option>
+              <option>Newest</option>
+            </select>
+          </div>
+
+          <div class="shop-grid">
+            <article class="product-card">
+              <div class="product-media">JSSOF Hoodie</div>
+              <div class="product-body">
+                <p class="product-type">Sweatshirts</p>
+                <h3>JSSOF Mission Hoodie</h3>
+                <p class="product-price">$58.00</p>
+                <button class="btn btn-shop" type="button">Add to Cart</button>
+              </div>
+            </article>
+
+            <article class="product-card">
+              <div class="product-media">JSSOF Zip-Up</div>
+              <div class="product-body">
+                <p class="product-type">Sweatshirts</p>
+                <h3>Ranger Zip Sweatshirt</h3>
+                <p class="product-price">$62.00</p>
+                <button class="btn btn-shop" type="button">Add to Cart</button>
+              </div>
+            </article>
+
+            <article class="product-card">
+              <div class="product-media">JSSOF Tee</div>
+              <div class="product-body">
+                <p class="product-type">T-Shirts</p>
+                <h3>Classic JSSOF Tee</h3>
+                <p class="product-price">$28.00</p>
+                <button class="btn btn-shop" type="button">Add to Cart</button>
+              </div>
+            </article>
+
+            <article class="product-card">
+              <div class="product-media">Patriot Tee</div>
+              <div class="product-body">
+                <p class="product-type">T-Shirts</p>
+                <h3>Flag Crest T-Shirt</h3>
+                <p class="product-price">$30.00</p>
+                <button class="btn btn-shop" type="button">Add to Cart</button>
+              </div>
+            </article>
+
+            <article class="product-card">
+              <div class="product-media">Trucker Hat</div>
+              <div class="product-body">
+                <p class="product-type">Hats</p>
+                <h3>JSSOF Trucker Hat</h3>
+                <p class="product-price">$26.00</p>
+                <button class="btn btn-shop" type="button">Add to Cart</button>
+              </div>
+            </article>
+
+            <article class="product-card">
+              <div class="product-media">Performance Cap</div>
+              <div class="product-body">
+                <p class="product-type">Hats</p>
+                <h3>Performance Field Cap</h3>
+                <p class="product-price">$32.00</p>
+                <button class="btn btn-shop" type="button">Add to Cart</button>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer" id="contact">
+      <div class="container footer-grid">
+        <div>
+          <h3>Joint Service Special Operations Fund</h3>
+          <p>
+            Joint Service Special Operation Fund Inc. is a tax exempt organization
+            under IRS Code Section 501(c)(3).
+          </p>
+          <p>EIN 26-1077434</p>
+        </div>
+        <div>
+          <h4>Contact</h4>
+          <p>Mindy Blain, Executive Director</p>
+          <p>(406) 668-1646</p>
+          <p><a href="mailto:mindy@jssof.org">mindy@jssof.org</a></p>
+        </div>
+        <div>
+          <h4>Quick Links</h4>
+          <p><a href="index.html#mission">Mission</a></p>
+          <p><a href="index.html#leadership">Leadership</a></p>
+          <p><a href="shop.html">Shop</a></p>
+          <p><a href="index.html#donate">Donate</a></p>
+        </div>
+      </div>
+      <div class="container footer-bottom">
+        <p>© <span id="current-year"></span> JSSOF. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script>
+      const hamburger = document.querySelector(".hamburger");
+      const nav = document.querySelector("#primary-nav");
+
+      hamburger?.addEventListener("click", () => {
+        const isOpen = nav.classList.toggle("is-open");
+        hamburger.setAttribute("aria-expanded", String(isOpen));
+        hamburger.setAttribute("aria-label", isOpen ? "Close menu" : "Open menu");
+      });
+
+      const yearNode = document.querySelector("#current-year");
+      if (yearNode) {
+        yearNode.textContent = String(new Date().getFullYear());
+      }
+    </script>
+  </body>
+</html>
