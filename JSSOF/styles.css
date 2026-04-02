@@ -452,6 +452,61 @@ a {
   margin-bottom: 1.35rem;
 }
 
+.section-heading-programs {
+  margin-top: 1.75rem;
+}
+
+.respite-definition {
+  margin-bottom: 0;
+  max-width: 52rem;
+}
+
+.respite-term-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.45rem 0.75rem;
+  padding-bottom: 0.65rem;
+  margin-bottom: 1rem;
+  border-bottom: 3px solid var(--red);
+  font-family: "Montserrat", Arial, sans-serif;
+}
+
+.respite-term {
+  font-weight: 800;
+  font-size: clamp(1.35rem, 2.5vw, 1.75rem);
+  color: var(--navy);
+  letter-spacing: 0.02em;
+}
+
+.respite-phonetic {
+  font-weight: 500;
+  font-size: clamp(1rem, 1.8vw, 1.2rem);
+  color: var(--muted);
+}
+
+.respite-part-of-speech {
+  font-style: italic;
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: var(--muted);
+}
+
+.respite-definitions {
+  margin: 0;
+  padding-left: 1.35rem;
+  color: var(--muted);
+  line-height: 1.6;
+}
+
+.respite-definitions li {
+  padding-left: 0.35rem;
+}
+
+.respite-definitions li + li {
+  margin-top: 0.5rem;
+}
+
 .program-grid,
 .stats-grid,
 .sponsor-grid {
