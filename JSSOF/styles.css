@@ -667,6 +667,25 @@ a {
   min-height: 0;
   padding: 0;
   background: var(--light);
+  position: relative;
+}
+
+.product-media:has(img)::after {
+  content: "Shop Example";
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  background: rgba(11, 31, 71, 0.52);
+  color: var(--white);
+  font-family: "Montserrat", Arial, sans-serif;
+  font-weight: 700;
+  font-size: clamp(1rem, 2.4vw, 1.45rem);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 0.75rem;
+  pointer-events: none;
 }
 
 .product-media img {
