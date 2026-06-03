@@ -600,48 +600,54 @@ a {
   object-fit: contain;
 }
 
-.contact-form-section {
+.contact-cta-section {
   background: #ffffff;
 }
 
-.contact-form-wrap {
-  max-width: 760px;
+.contact-cta-wrap {
+  max-width: 52rem;
 }
 
-.contact-form {
-  background: var(--light);
-  border: 1px solid rgba(0, 0, 0, 0.12);
-  border-radius: 18px;
-  padding: 1.2rem;
-  display: grid;
-  gap: 0.65rem;
+.contact-cta-card p {
+  margin-bottom: 0.85rem;
 }
 
-.contact-form label {
+.contact-cta-card p:last-child {
+  margin-bottom: 0;
+}
+
+.contact-cta-label {
+  margin-top: 1.1rem;
+  margin-bottom: 0.35rem;
+  font-family: "Montserrat", Arial, sans-serif;
   font-weight: 700;
+  font-size: 1.05rem;
   color: var(--navy);
 }
 
-.contact-form input,
-.contact-form textarea {
-  width: 100%;
-  border: 1px solid rgba(0, 0, 0, 0.2);
-  border-radius: 10px;
-  padding: 0.72rem 0.8rem;
-  font: inherit;
-  color: var(--ink);
-  background: var(--white);
+.contact-cta-phone {
+  margin: 0 0 1rem;
+  font-family: "Montserrat", Arial, sans-serif;
+  font-size: clamp(1.5rem, 3.5vw, 2rem);
+  font-weight: 800;
+  line-height: 1.2;
 }
 
-.contact-form input:focus,
-.contact-form textarea:focus {
-  outline: 2px solid rgba(193, 38, 44, 0.25);
-  border-color: var(--red);
+.contact-cta-phone a {
+  color: var(--red);
+  text-decoration: none;
 }
 
-.contact-form button {
-  justify-self: start;
-  margin-top: 0.35rem;
+.contact-cta-phone a:hover,
+.contact-cta-phone a:focus-visible {
+  color: var(--navy);
+  text-decoration: underline;
+  text-underline-offset: 0.12em;
+}
+
+.contact-cta-note {
+  margin: 0;
+  font-size: 1rem;
 }
 
 .shop-hero {
