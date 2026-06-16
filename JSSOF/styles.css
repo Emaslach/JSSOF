@@ -870,3 +870,332 @@ a {
     align-items: flex-start;
   }
 }
+
+/* Donate page */
+.donate-page {
+  background: #eef1f6;
+}
+
+.donate-main {
+  padding: clamp(2rem, 5vw, 3.5rem) 1rem clamp(3rem, 6vw, 4.5rem);
+  display: grid;
+  place-items: center;
+}
+
+.donate-widget {
+  width: min(100%, 440px);
+  background: var(--white);
+  border-radius: 14px;
+  box-shadow: 0 10px 36px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+}
+
+.donate-widget-header {
+  padding: 2rem 1.5rem 1.25rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.donate-widget-logo {
+  width: clamp(6rem, 20vw, 8.5rem);
+  height: auto;
+  display: block;
+  margin: 0 auto 1.15rem;
+  object-fit: contain;
+  filter: brightness(0);
+}
+
+.donate-widget-disclaimer {
+  margin: 0;
+  font-size: 0.82rem;
+  line-height: 1.5;
+  color: #7a8496;
+}
+
+.donate-form {
+  padding: 0 1.5rem 1.5rem;
+}
+
+.donate-frequency {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0;
+  margin-bottom: 1.35rem;
+  border: 1px solid #d8dee8;
+  border-radius: 10px;
+  overflow: hidden;
+  background: #f7f9fc;
+}
+
+.donate-frequency-btn {
+  border: none;
+  background: transparent;
+  padding: 0.85rem 0.5rem;
+  font: inherit;
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: #6b7588;
+  cursor: pointer;
+  transition: background 0.15s ease, color 0.15s ease;
+}
+
+.donate-frequency-btn.is-active {
+  background: #e8edf5;
+  color: var(--ink);
+  box-shadow: inset 0 0 0 1px #c5d0e0;
+}
+
+.donate-amount-fieldset {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.donate-amount-legend {
+  font-family: "Montserrat", Arial, sans-serif;
+  font-weight: 700;
+  font-size: 0.98rem;
+  color: var(--ink);
+  margin-bottom: 0.75rem;
+  padding: 0;
+}
+
+.donate-amount-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.65rem;
+  margin-bottom: 0.75rem;
+}
+
+.donate-amount-btn {
+  border: 1px solid #d8dee8;
+  border-radius: 10px;
+  background: var(--white);
+  padding: 1.25rem 0.5rem;
+  font-family: "Montserrat", Arial, sans-serif;
+  font-size: clamp(1.15rem, 3.5vw, 1.45rem);
+  font-weight: 600;
+  color: #8a93a5;
+  cursor: pointer;
+  transition: border-color 0.15s ease, color 0.15s ease, box-shadow 0.15s ease;
+}
+
+.donate-amount-btn--wide {
+  grid-column: 1 / -1;
+}
+
+.donate-amount-btn:hover,
+.donate-amount-btn:focus-visible {
+  border-color: #b8c2d4;
+  color: var(--ink);
+}
+
+.donate-amount-btn.is-active {
+  border-color: #b8c2d4;
+  color: var(--ink);
+  box-shadow: inset 0 0 0 1px #c5d0e0;
+  background: #f7f9fc;
+}
+
+.donate-custom-label {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.donate-custom-wrap {
+  display: flex;
+  align-items: center;
+  border: 1px solid #d8dee8;
+  border-radius: 10px;
+  background: var(--white);
+  overflow: hidden;
+}
+
+.donate-custom-prefix {
+  padding: 0.85rem 0 0.85rem 1rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #8a93a5;
+}
+
+.donate-custom-input {
+  flex: 1;
+  border: none;
+  padding: 0.85rem 1rem 0.85rem 0.35rem;
+  font: inherit;
+  font-size: 1rem;
+  color: var(--ink);
+  background: transparent;
+  min-width: 0;
+}
+
+.donate-custom-input:focus {
+  outline: none;
+}
+
+.donate-custom-wrap:focus-within {
+  border-color: var(--red);
+  box-shadow: 0 0 0 2px rgba(193, 38, 44, 0.15);
+}
+
+.donate-custom-input::placeholder {
+  color: #a0a9b8;
+}
+
+.donate-options {
+  margin-top: 1rem;
+  border: 1px solid #d8dee8;
+  border-radius: 10px;
+  background: var(--white);
+}
+
+.donate-options-summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.9rem 1rem;
+  font-weight: 600;
+  color: var(--ink);
+  cursor: pointer;
+  list-style: none;
+}
+
+.donate-options-summary::-webkit-details-marker {
+  display: none;
+}
+
+.donate-options-icon {
+  font-size: 1.35rem;
+  font-weight: 400;
+  color: #8a93a5;
+  line-height: 1;
+}
+
+.donate-options[open] .donate-options-icon {
+  transform: rotate(45deg);
+}
+
+.donate-options-body {
+  padding: 0 1rem 1rem;
+  border-top: 1px solid #eef1f6;
+  display: grid;
+  gap: 0.75rem;
+}
+
+.donate-option-check {
+  display: flex;
+  align-items: center;
+  gap: 0.55rem;
+  font-size: 0.92rem;
+  color: var(--muted);
+  cursor: pointer;
+}
+
+.donate-option-field {
+  font-size: 0.92rem;
+  font-weight: 600;
+  color: var(--ink);
+  margin-top: 0.25rem;
+}
+
+.donate-option-input {
+  width: 100%;
+  border: 1px solid #d8dee8;
+  border-radius: 8px;
+  padding: 0.65rem 0.75rem;
+  font: inherit;
+  color: var(--ink);
+}
+
+.donate-continue-btn {
+  width: 100%;
+  margin-top: 1.15rem;
+  border: none;
+  border-radius: 10px;
+  padding: 1rem;
+  background: var(--navy);
+  color: var(--white);
+  font-family: "Montserrat", Arial, sans-serif;
+  font-size: 1.05rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.15s ease, transform 0.15s ease;
+}
+
+.donate-continue-btn:hover,
+.donate-continue-btn:focus-visible {
+  background: var(--red);
+  transform: translateY(-1px);
+}
+
+.donate-widget-footer {
+  padding: 1.35rem 1.5rem 1.5rem;
+  background: #f3f5f9;
+  border-top: 1px solid #e4e9f0;
+  text-align: center;
+}
+
+.donate-alt-label {
+  margin: 0 0 0.75rem;
+  font-size: 0.88rem;
+  color: #8a93a5;
+}
+
+.donate-daf-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.65rem;
+  border: 1px solid #d8dee8;
+  border-radius: 10px;
+  background: var(--white);
+  padding: 0.7rem 1.1rem;
+  font-weight: 600;
+  color: #4a7fd4;
+  transition: border-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+.donate-daf-btn:hover,
+.donate-daf-btn:focus-visible {
+  border-color: #b8c2d4;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.06);
+}
+
+.donate-daf-mark {
+  display: inline-grid;
+  place-items: center;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 6px;
+  background: #4a7fd4;
+  color: var(--white);
+  font-size: 0.62rem;
+  font-weight: 800;
+  letter-spacing: 0.02em;
+}
+
+.donate-daf-text {
+  font-size: 0.95rem;
+}
+
+.donate-secure-note {
+  margin: 1rem 0 0;
+  font-size: 0.78rem;
+  color: #8a93a5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.35rem;
+}
+
+.donate-secure-icon {
+  font-size: 0.85rem;
+}

@@ -1,0 +1,260 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Donate | JSSOF</title>
+    <meta
+      name="description"
+      content="Support JSSOF with a one-time or monthly gift. Your donation funds world-class respite experiences for U.S. Special Operations warfighters, families, and veterans."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Source+Sans+3:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <link rel="icon" type="image/png" href="assets/favicon.png" />
+  </head>
+  <body class="donate-page">
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <a class="logo" href="index.html" aria-label="JSSOF home">
+          <img class="logo-nav-icon" src="assets/jssof-hero-logo.png" alt="" aria-hidden="true" />
+          <span class="logo-mark">JSSOF</span>
+        </a>
+        <button
+          class="hamburger"
+          type="button"
+          aria-label="Open menu"
+          aria-expanded="false"
+          aria-controls="primary-nav"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <nav id="primary-nav" aria-label="Primary">
+          <ul class="nav-links">
+            <li><a href="index.html#mission">Mission</a></li>
+            <li><a href="index.html#respites">Respites</a></li>
+            <li><a href="index.html#impact">Impact</a></li>
+            <li><a href="index.html#leadership">Leadership</a></li>
+            <li><a href="index.html#sponsors">Sponsors</a></li>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+          </ul>
+        </nav>
+        <a class="btn btn-sm" href="donate.html" aria-current="page">Donate</a>
+      </div>
+    </header>
+
+    <main class="donate-main">
+      <div class="donate-widget" role="region" aria-label="Donation form">
+        <div class="donate-widget-header">
+          <a href="index.html" aria-label="JSSOF home">
+            <img
+              class="donate-widget-logo"
+              src="assets/jssof-hero-logo.png"
+              alt="JSSOF logo"
+              width="120"
+              height="120"
+            />
+          </a>
+          <p class="donate-widget-disclaimer">
+            Joint Service Special Operation Fund Inc. is a tax-exempt organization under
+            IRS Code Section 501(c)(3). Your donation fuels our mission supporting
+            Special Operations warfighters, families, and veterans.
+          </p>
+        </div>
+
+        <form class="donate-form" id="donate-form" action="#" method="post" novalidate>
+          <div class="donate-frequency" role="tablist" aria-label="Donation frequency">
+            <button
+              class="donate-frequency-btn is-active"
+              type="button"
+              role="tab"
+              aria-selected="true"
+              data-frequency="one-time"
+            >
+              One Time
+            </button>
+            <button
+              class="donate-frequency-btn"
+              type="button"
+              role="tab"
+              aria-selected="false"
+              data-frequency="monthly"
+            >
+              Monthly
+            </button>
+          </div>
+
+          <fieldset class="donate-amount-fieldset">
+            <legend class="donate-amount-legend">Choose an amount to give</legend>
+            <div class="donate-amount-grid">
+              <button class="donate-amount-btn is-active" type="button" data-amount="100">$100</button>
+              <button class="donate-amount-btn" type="button" data-amount="500">$500</button>
+              <button class="donate-amount-btn" type="button" data-amount="1000">$1,000</button>
+              <button class="donate-amount-btn" type="button" data-amount="5000">$5,000</button>
+              <button class="donate-amount-btn donate-amount-btn--wide" type="button" data-amount="10000">$10,000</button>
+            </div>
+            <label class="donate-custom-label" for="donate-custom-amount">Custom amount</label>
+            <div class="donate-custom-wrap">
+              <span class="donate-custom-prefix" aria-hidden="true">$</span>
+              <input
+                id="donate-custom-amount"
+                class="donate-custom-input"
+                type="number"
+                name="custom_amount"
+                min="1"
+                step="1"
+                placeholder="or other amount"
+                inputmode="decimal"
+              />
+            </div>
+            <input type="hidden" name="frequency" id="donate-frequency-value" value="one-time" />
+            <input type="hidden" name="amount" id="donate-amount-value" value="100" />
+          </fieldset>
+
+          <details class="donate-options">
+            <summary class="donate-options-summary">
+              <span>Donation Options</span>
+              <span class="donate-options-icon" aria-hidden="true">+</span>
+            </summary>
+            <div class="donate-options-body">
+              <label class="donate-option-check">
+                <input type="checkbox" name="anonymous" />
+                Make my gift anonymous
+              </label>
+              <label class="donate-option-check">
+                <input type="checkbox" name="newsletter" />
+                Keep me updated on JSSOF programs and impact
+              </label>
+              <label class="donate-option-field" for="donate-dedication">
+                Dedicate my gift (optional)
+              </label>
+              <input
+                id="donate-dedication"
+                class="donate-option-input"
+                type="text"
+                name="dedication"
+                placeholder="In honor or memory of…"
+              />
+            </div>
+          </details>
+
+          <button class="donate-continue-btn" type="submit">Continue</button>
+        </form>
+
+        <div class="donate-widget-footer">
+          <p class="donate-alt-label">Or donate with</p>
+          <a class="donate-daf-btn" href="#" aria-label="Donate with Donor Advised Fund">
+            <span class="donate-daf-mark" aria-hidden="true">DAF</span>
+            <span class="donate-daf-text">Donor Advised Fund</span>
+          </a>
+          <p class="donate-secure-note">
+            <span class="donate-secure-icon" aria-hidden="true">&#128274;</span>
+            Secure donation processing
+          </p>
+        </div>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div>
+          <h3>Joint Service Special Operations Fund</h3>
+          <p>
+            Joint Service Special Operation Fund Inc. is a tax exempt organization
+            under IRS Code Section 501(c)(3).
+          </p>
+          <p>EIN 26-1077434</p>
+        </div>
+        <div>
+          <h4>Contact</h4>
+          <p>Mindy Blain, Executive Director</p>
+          <p>(406) 668-1646</p>
+          <p><a href="mailto:mindy@jssof.org">mindy@jssof.org</a></p>
+        </div>
+        <div>
+          <h4>Quick Links</h4>
+          <p><a href="index.html#mission">Mission</a></p>
+          <p><a href="index.html#leadership">Leadership</a></p>
+          <p><a href="shop.html">Shop</a></p>
+          <p><a href="index.html#respites">Our Respites</a></p>
+          <p><a href="donate.html">Donate</a></p>
+        </div>
+      </div>
+      <div class="container footer-bottom">
+        <p>© <span id="current-year"></span> JSSOF. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script>
+      const hamburger = document.querySelector(".hamburger");
+      const nav = document.querySelector("#primary-nav");
+
+      hamburger?.addEventListener("click", () => {
+        const isOpen = nav.classList.toggle("is-open");
+        hamburger.setAttribute("aria-expanded", String(isOpen));
+        hamburger.setAttribute("aria-label", isOpen ? "Close menu" : "Open menu");
+      });
+
+      const yearNode = document.querySelector("#current-year");
+      if (yearNode) {
+        yearNode.textContent = String(new Date().getFullYear());
+      }
+
+      const frequencyBtns = document.querySelectorAll(".donate-frequency-btn");
+      const frequencyInput = document.querySelector("#donate-frequency-value");
+      const amountBtns = document.querySelectorAll(".donate-amount-btn");
+      const amountInput = document.querySelector("#donate-amount-value");
+      const customAmount = document.querySelector("#donate-custom-amount");
+      const donateForm = document.querySelector("#donate-form");
+
+      frequencyBtns.forEach((btn) => {
+        btn.addEventListener("click", () => {
+          frequencyBtns.forEach((item) => {
+            item.classList.remove("is-active");
+            item.setAttribute("aria-selected", "false");
+          });
+          btn.classList.add("is-active");
+          btn.setAttribute("aria-selected", "true");
+          frequencyInput.value = btn.dataset.frequency;
+        });
+      });
+
+      amountBtns.forEach((btn) => {
+        btn.addEventListener("click", () => {
+          amountBtns.forEach((item) => item.classList.remove("is-active"));
+          btn.classList.add("is-active");
+          amountInput.value = btn.dataset.amount;
+          customAmount.value = "";
+        });
+      });
+
+      customAmount?.addEventListener("input", () => {
+        if (customAmount.value) {
+          amountBtns.forEach((item) => item.classList.remove("is-active"));
+          amountInput.value = customAmount.value;
+        }
+      });
+
+      donateForm?.addEventListener("submit", (event) => {
+        event.preventDefault();
+        const amount = amountInput.value || customAmount.value;
+        if (!amount || Number(amount) < 1) {
+          customAmount.focus();
+          return;
+        }
+        const frequency = frequencyInput.value === "monthly" ? "monthly" : "one-time";
+        alert(
+          `Thank you! ${frequency === "monthly" ? "Monthly" : "One-time"} gift of $${amount} selected. Payment processing will be connected here.`
+        );
+      });
+    </script>
+  </body>
+</html>
